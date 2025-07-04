@@ -20,6 +20,9 @@ const question = (quesText, opt1, opt2, opt3, opt4) => {
         const opt = document.createElement('div');
         optionsBox.append(opt);
         opt.classList.add('opt')
+        opt.addEventListener('click', ()=>{
+            
+        })
         //putting condition
         i == 1 ? opt.innerText =opt1 :
         i == 2 ? opt.innerText = opt2 :
