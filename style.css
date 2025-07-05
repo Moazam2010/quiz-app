@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 30px;
 }
 
 .ques-box {
@@ -42,10 +42,12 @@ body {
 }
 .opt {
     background-color: #ebebeb;
+    border: 2px solid transparent;
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
     box-shadow: 2px 2px 5px rgba(3, 3, 3, 0.295);
+    cursor: pointer;
     transition: 0.1s all ease-in-out;
 }
 .opt:hover{
@@ -66,4 +68,17 @@ button.next:hover {
 }
 button.next:active {
     transform: scale(0.95);
+}
+
+/* JS Styles */
+
+/* if options is right */
+.right {
+    border: 2px solid #0bb40b;
+    color: #0bb40b;
+}
+/* if options is wrong */
+.wrong {
+    border: 2px solid #dd0606;
+    color: #dd0606;
 }
