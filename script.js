@@ -12,7 +12,6 @@
 const totalQues = document.getElementById('total-ques');
 const rightQues = document.getElementById('right-ques');
 const wrongQues = document.getElementById('total-ques');
-console.log(totalQues, rightQues, wrongQues)
 //Question function
 const question = (quesText, opt1, opt2, opt3, opt4, correctAns) => {
     const quesBox = document.getElementById('ques-box');
