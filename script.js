@@ -1,3 +1,9 @@
+
+//ques Count
+const totalQues = document.getElementById('total-ques');
+const rightQues = document.getElementById('right-ques');
+const wrongQues = document.getElementById('total-ques');\
+// Parameters Datatype
 /**
  * 
  * @param {string} quesText 
@@ -7,11 +13,6 @@
  * @param {string} opt4 
  * @param {string} correctAns 
  */
-
-//ques Count
-const totalQues = document.getElementById('total-ques');
-const rightQues = document.getElementById('right-ques');
-const wrongQues = document.getElementById('total-ques');
 //Question function
 const question = (quesText, opt1, opt2, opt3, opt4, correctAns) => {
     const quesBox = document.getElementById('ques-box');
@@ -54,4 +55,4 @@ const question = (quesText, opt1, opt2, opt3, opt4, correctAns) => {
 };
 question('What is the color of grass?', 'Blue', 'Purple', 'Green', 'Red','green')
 question('Who is the Co-founder of Microsoft?', 'Elon Musk', 'Bill Gates', 'Mark Zuckerburg', 'Narendra Modi','bill gates')
-question('How many teeths does an adult has?', '10', '25', '32', '45','32')
+question('How many teeths does an adult has?', '10', '25', '32', '45','32');
