@@ -1,9 +1,20 @@
 /**
+ * 
  * @param {string} quesText 
+ * @param {string} opt1 
+ * @param {string} opt2 
+ * @param {string} opt3 
+ * @param {string} opt4 
+ * @param {string} correctAns 
  */
+
+//ques Count
+const totalQues = document.getElementById('total-ques');
+const rightQues = document.getElementById('right-ques');
+const wrongQues = document.getElementById('total-ques');
+console.log(totalQues, rightQues, wrongQues)
 //Question function
 const question = (quesText, opt1, opt2, opt3, opt4, correctAns) => {
-
     const quesBox = document.getElementById('ques-box');
 
     // Adding Question Text
@@ -22,7 +33,7 @@ const question = (quesText, opt1, opt2, opt3, opt4, correctAns) => {
         optionsBox.append(opt);
         opt.classList.add('opt')
         //Event Listener on options 
-        opt.addEventListener('click', (e) => {
+        opt.addEventListener('click', () => {
             if(clicks == 0){
                 clicks++;
                 if (opt.textContent.toLowerCase() == correctAns) {
@@ -40,8 +51,8 @@ const question = (quesText, opt1, opt2, opt3, opt4, correctAns) => {
         i == 4 ? opt.innerText = opt4 :
         i = 1;
     }
+    
 };
 question('What is the color of grass?', 'Blue', 'Purple', 'Green', 'Red','green')
-question('How many teeth does an adult have?','12','36','32','25','32')
-question('Who is the co-founder of Microsoft?','Satya Nadella', 'Bill Gates', 'Elon Musk', 'Narendra Modi', 'bill gates')
-question('How many letters are there in English Alphabet?','15','20','26','33','15')
+question('Who is the Co-founder of Microsoft?', 'Elon Musk', 'Bill Gates', 'Mark Zuckerburg', 'Narendra Modi','bill gates')
+question('How many teeths does an adult has?', '10', '25', '32', '45','32')

@@ -70,15 +70,34 @@ button.next:active {
     transform: scale(0.95);
 }
 
+.ques-count {
+    margin: 20px 10px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.ques-count > div {
+    display: flex;
+}
+#total-ques {
+    color: black
+}
+#right-ques {
+    color: #0bb40b;
+}
+#wrong-ques {
+    color: #dd0606;
+}
 /* JS Styles */
 
-/* if options is right */
 .right {
     border: 2px solid #0bb40b;
     color: #0bb40b;
 }
-/* if options is wrong */
 .wrong {
     border: 2px solid #dd0606;
     color: #dd0606;
 }
+
+
