@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 10px 0 0 0;
 }
 
 .ques-box {
@@ -53,32 +53,23 @@ body {
 .opt:hover{
     background-color: #d3d3d3;
 }
-button.next {
-    padding: 10px 15px;
-    margin: 10px;
-    background: linear-gradient(45deg, rgb(79, 79, 255), rgb(166, 166, 255));
-    border: none;
-    border-radius: 20px;
-    width: 80px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
-    transition: 0.1s all ease-in-out;
-}
-button.next:hover {
-    transform: scale(1.05);
-}
-button.next:active {
-    transform: scale(0.95);
-}
-
-.ques-count {
-    margin: 20px 10px;
+/* Question  count */
+footer{
     font-weight: 600;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 30px;
+    position: sticky;
+    bottom: 0;
+    margin: 30px 0 0 0;
+    background-color: white;
 }
-.ques-count > div {
+footer > div {
     display: flex;
+}
+footer > div > div {
 }
 #total-ques {
     color: black

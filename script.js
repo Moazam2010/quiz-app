@@ -1,8 +1,11 @@
 
 //ques Count
-const totalQues = document.getElementById('total-ques');
-const rightQues = document.getElementById('right-ques');
-const wrongQues = document.getElementById('total-ques');\
+const totalQuesElement = document.getElementById('total-ques');
+const rightQuesElement = document.getElementById('right-ques');
+const wrongQuesElement = document.getElementById('wrong-ques');
+let totalQues = 0;
+let rightQues = 0;
+let wrongQues = 0;
 // Parameters Datatype
 /**
  * 
@@ -37,9 +40,13 @@ const question = (quesText, opt1, opt2, opt3, opt4, correctAns) => {
             if(clicks == 0){
                 clicks++;
                 if (opt.textContent.toLowerCase() == correctAns) {
-                    opt.classList.add('right')
+                    opt.classList.add('right');
+                    rightQues++;
+                    rightQuesElement.innerHTML = rightQues;
                 } else {
                     opt.classList.add('wrong');
+                    wrongQues++;
+                    wrongQuesElement.innerHTML = wrongQues;
                 }
             }
             
@@ -51,8 +58,12 @@ const question = (quesText, opt1, opt2, opt3, opt4, correctAns) => {
         i == 4 ? opt.innerText = opt4 :
         i = 1;
     }
-    
+    totalQues++;
+    totalQuesElement.innerHTML = totalQues;
+    wrongQuesElement.innerHTML = wrongQues;
+    rightQuesElement.innerHTML = rightQues;
 };
 question('What is the color of grass?', 'Blue', 'Purple', 'Green', 'Red','green')
 question('Who is the Co-founder of Microsoft?', 'Elon Musk', 'Bill Gates', 'Mark Zuckerburg', 'Narendra Modi','bill gates')
 question('How many teeths does an adult has?', '10', '25', '32', '45','32');
+question('Which tag is used to add images in HTML?','link', 'a', 'img', 'div','img')
