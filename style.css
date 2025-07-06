@@ -69,8 +69,6 @@ footer{
 footer > div {
     display: flex;
 }
-footer > div > div {
-}
 #total-ques {
     color: black
 }
